@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "聚推客订单抓取器",
+  "version": "1.0",
+  "description": "自动抓取商品名称并通知用户",
+  "permissions": [
+    "scripting",
+    "tabs",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://pub.jutuike.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "抓取订单商品"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
